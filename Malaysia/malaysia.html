@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One English - Английский лагерь в Малайзии</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="website icon" type="jpg" href="../malaysia-flag.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+        html, body {
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-primary { background-color: #C8102E; }
+        .text-primary { color: #C8102E; }
+        .border-primary { border-color: #C8102E; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('malaysia-back.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #C8102E;
+            color: white;
+            margin-right: 16px;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: #C8102E;
+            bottom: -8px;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 max-w-screen-xl py-3 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center">
+                <span class="text-primary font-bold text-2xl">ONE 
+                    <span class="text-[#002366]">ENGLISH</span>
+                </span>
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-primary font-medium">О Малайзии</a>
+                <a href="#camp" class="text-gray-700 hover:text-primary font-medium">Наш лагерь</a>
+                <a href="#program" class="text-gray-700 hover:text-primary font-medium">Программа</a>
+                <a href="#dates" class="text-gray-700 hover:text-primary font-medium">Даты</a>
+                <a href="#faq" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+            </div>
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">О Малайзии</a>
+            <a href="#camp" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">Наш лагерь</a>
+            <a href="#program" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">Программа</a>
+            <a href="#dates" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">Даты</a>
+            <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-[80vh] flex items-center text-white" data-aos="fade">
+        <div class="container mx-auto px-4 max-w-screen-xl text-center md:text-left">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6" data-aos="fade-up">
+                    Английский лагерь в Малайзии
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    CAMP в центре столицы — Куала-Лумпуре. Погружение в английский язык и культуру для детей 8–18 лет.
+                </p>
+                <a href="../index.html#contact" class="bg-primary hover:bg-red-800 text-white font-semibold py-3 px-8 rounded-full transition transform hover:scale-105 inline-block" data-aos="fade-up" data-aos-delay="200">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Malaysia -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title" data-aos="fade">
+                О Малайзии
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+                <!-- Text + Features -->
+                <div data-aos="fade-right">
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        <span class="font-semibold text-primary">Малайзия</span> — это мультикультурная страна, где английский язык является вторым официальным. Здесь созданы идеальные условия для языковой практики и культурного обмена.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Участники лагеря смогут насладиться теплым климатом, безопасной атмосферой, гостеприимством и разнообразием кухни, а также познакомиться с уникальной архитектурой и природой.
+                    </p>
+                    <!-- Features -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-primary text-white p-2 rounded-full">
+                                <i data-feather="globe" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-sm font-medium">Англоговорящая страна</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-primary text-white p-2 rounded-full">
+                                <i data-feather="sun" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-sm font-medium">Тёплый климат</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-primary text-white p-2 rounded-full">
+                                <i data-feather="shield" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-sm font-medium">Безопасность</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-primary text-white p-2 rounded-full">
+                                <i data-feather="dollar-sign" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-sm font-medium">Доступные цены</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video -->
+                <div data-aos="fade-left" class="rounded-lg overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.youtube.com/embed/kQwOR6CWTOM?si=TJoGWtVmoIRza_bR"
+                        class="w-full h-64 md:h-[400px]"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <!-- Photos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch" data-aos="fade-up">
+                <!-- Left side: two stacked photos -->
+                <div class="grid gap-6">
+                    <img src="malaysia.jpg" alt="Malaysia landscape" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full object-cover">
+                    <img src="malaysia2.png" alt="Malaysia city view" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full object-cover">
+                </div>
+                <!-- Right side: one tall photo -->
+                <img src="malaysia1.jpg" alt="Malaysia culture" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Malaysia -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Почему Малайзия?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up">
+                    <div class="text-primary mb-4">
+                        <i data-feather="sun" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Комфортный климат</h3>
+                    <p>Тропический климат с комфортной температурой круглый год, идеально подходящий для учебы и отдыха.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4">
+                        <i data-feather="coffee" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Разнообразие еды</h3>
+                    <p>Богатый выбор блюд европейской, азиатской и казахской кухни, учитывающий все предпочтения.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4">
+                        <i data-feather="shield" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Безопасность</h3>
+                    <p>Один из самых безопасных регионов Азии с высоким уровнем жизни и развитой инфраструктурой.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up">
+                    <div class="text-primary mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Доступные цены</h3>
+                    <p>Оптимальное соотношение цены и качества образования и проживания по сравнению с другими странами.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4">
+                        <i data-feather="globe" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Англоговорящая страна</h3>
+                    <p>Английский язык широко используется в повседневной жизни, что обеспечивает постоянную практику.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4">
+                        <i data-feather="map" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Поездки на острова</h3>
+                    <p>Возможность посетить живописные острова с белоснежными пляжами и кристально чистой водой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Camp -->
+    <section id="camp" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Наш лагерь</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Для детей 8–18 лет</h3>
+                    <p class="text-lg mb-6">Наш лагерь предлагает уникальную возможность совместить изучение английского языка с погружением в культуру Малайзии.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="award" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Языковые цели</h4>
+                                <p>Подготовка к IELTS, TOEFL и другим международным экзаменам</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="book" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Академические цели</h4>
+                                <p>Развитие академических навыков на английском языке</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="globe" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Культурное погружение</h4>
+                                <p>Знакомство с традициями и обычаями Малайзии</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="map" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Путешествия</h4>
+                                <p>Экскурсии по самым интересным местам страны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-white rounded-lg shadow-xl p-6 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Уровни подготовки</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 flex items-center">
+                                    <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">A</span>
+                                    Beginner (A1)
+                                </h4>
+                                <p class="pl-8">Базовые навыки общения, обучение в игровой форме, адаптированные экскурсии с языковой практикой.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 flex items-center">
+                                    <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">B</span>
+                                    Intermediate (B1-B2)
+                                </h4>
+                                <p class="pl-8">Развитие разговорных навыков, подготовка к международным экзаменам, участие в дискуссиях.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 flex items-center">
+                                    <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">C</span>
+                                    Advanced (C1)
+                                </h4>
+                                <p class="pl-8">Практика с носителями языка, участие в олимпиадах, подготовка к экзаменам для поступления в университеты.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Программа лагеря</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="calendar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Длительность</h3>
+                    <p>2 или 3 недели интенсивного обучения и культурного погружения</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Обучение</h3>
+                    <p>5 часов английского языка ежедневно с носителями языка</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Олимпиада</h3>
+                    <p>Международная олимпиада по английскому языку с награждением</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="file-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Сертификаты</h3>
+                    <p>Официальный сертификат по окончании курса с указанием уровня</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="map"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Экскурсии</h3>
+                    <p>9+ экскурсий по самым интересным местам Куала-Лумпура и окрестностей</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Поездка на остров</h3>
+                    <p>Захватывающая поездка на живописный малайзийский остров</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Included -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">
+                Что включено
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">      
+                <!-- Left side: Features -->
+                <div data-aos="fade-right">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="users" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Сопровождение лидерами</h4>
+                                <p>На 10 детей - 1 групп-лидер, обеспечивающий комфорт и безопасность</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="home" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Проживание</h4>
+                                <p>4* отель в центре Куала-Лумпура с удобствами и сервисом</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="wifi" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Удобства</h4>
+                                <p>Wi-Fi, бассейн, спортзал, лаунж-зоны, охрана 24/7</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="smile" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Развлечения</h4>
+                                <p>Викторины, вечеринки, фотоотчеты для родителей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side: Image instead of "Питание" -->
+                <div data-aos="fade-left" class="flex justify-center">
+                    <img src="pool.png" alt="Что включено" class="rounded-lg shadow-lg w-full max-w-[518px] h-auto object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">
+                Размещение
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">      
+                <!-- Left: big photo -->
+                <div data-aos="fade-right">
+                    <img src="apartment.jpg" alt="Accommodation" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full h-auto object-cover">
+                </div>      
+                <!-- Right: text + features + extra photo -->
+                <div data-aos="fade-left" class="flex flex-col justify-between h-full">
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="users" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Двухместное размещение</h4>
+                                <p>Раздельное по полу и возрасту для комфорта всех участников</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="home" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">В номере</h4>
+                                <p>Полотенца, халаты, фен, туалетные принадлежности, кондиционер, утюг</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="activity" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Доступ</h4>
+                                <p>К бассейну и тренажерному залу отеля</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="shield" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Безопасность</h4>
+                                <p>Охрана 24/7, видеонаблюдение, контроль доступа</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extra photo below text -->
+                    <img src="apartment1.png" alt="Accommodation extra" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full max-w-[311px] h-auto object-cover self-center md:self-start">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Сопровождение</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary text-white rounded-full p-3 mr-4">
+                                <i data-feather="user" class="w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Групп-лидеры</h3>
+                        </div>
+                        <p class="text-lg mb-6">На каждые 10 детей приходится 1 опытный групп-лидер, который сопровождает участников на протяжении всей поездки.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Круглосуточное сопровождение</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Помощь в решении любых вопросов</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Организация досуга и мероприятий</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Связь с родителями и отчетность</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary text-white rounded-full p-3 mr-4">
+                                <i data-feather="map" class="w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Кураторы и гиды</h3>
+                        </div>
+                        <p class="text-lg mb-6">На месте участников встречают профессиональные кураторы и гиды, которые обеспечивают комфортное пребывание в Малайзии.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Организация экскурсий и мероприятий</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Помощь в адаптации к новой среде</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Решение организационных вопросов</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2"></i>
+                                <span>Круглосуточная поддержка</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Program -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Программа обучения</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Преподаватели</h3>
+                    <p>Носители языка из США, Канады и Европы с международными сертификатами</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Материалы</h3>
+                    <p>Каждый студент получает полный комплект учебных материалов</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4 text-4xl">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Сертификат</h3>
+                    <p>Официальный сертификат по окончании курса с указанием уровня</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excursions -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Экскурсии</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up">
+                    <img src="http://static.photos/travel/600x400/1" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">Putrajaya</h3>
+                    <p>Современный административный центр Малайзии с уникальной архитектурой</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/travel/600x400/2" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">Genting Highlands</h3>
+                    <p>Горный курорт с канатными дорогами и развлекательными комплексами</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/travel/600x400/3" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">Batu Caves</h3>
+                    <p>Знаменитые известняковые пещеры с индуистскими храмами</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up">
+                    <img src="http://static.photos/travel/600x400/4" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">Aquaria KLCC</h3>
+                    <p>Один из крупнейших океанариумов в Юго-Восточной Азии</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/travel/600x400/5" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">China Town</h3>
+                    <p>Яркий и шумный район с традиционными магазинами и ресторанами</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/travel/600x400/6" alt="Excursion" class="rounded-t-lg mb-4 w-full">
+                    <h3 class="text-xl font-bold mb-2">Аквапарк</h3>
+                    <p>Современный аквапарк с множеством аттракционов и развлечений</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Visits -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Университетские визиты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <img src="http://static.photos/education/800x600/1" alt="University" class="rounded-lg shadow-xl hover-scale">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Знакомство с ведущими университетами</h3>
+                    <p class="text-lg mb-6">Участники лагеря посещают престижные университеты Малайзии, где знакомятся с системой высшего образования и перспективами обучения.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="book-open" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Лекции</h4>
+                                <p>Встречи с преподавателями и студентами университетов</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="trending-up" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Тренды профессий</h4>
+                                <p>Знакомство с востребованными профессиями на международном рынке</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white text-primary rounded-full p-2 mr-4">
+                                <i data-feather="compass" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Профориентация</h4>
+                                <p>Помощь в выборе будущей профессии и учебного заведения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Olympiad -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Олимпиада</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Международная олимпиада по английскому</h3>
+                    <p class="text-lg mb-6">В конце программы все участники принимают участие в международной олимпиаде по английскому языку, где могут продемонстрировать свои знания и навыки.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="award" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Награждение</h4>
+                                <p>Торжественная церемония награждения победителей</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="file-text" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Сертификаты</h4>
+                                <p>Все участники получают сертификаты олимпиады</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="gift" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Призы</h4>
+                                <p>Ценные призы и подарки для победителей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="http://static.photos/education/800x600/2" alt="Olympiad" class="rounded-lg shadow-xl hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">FAQ (Безопасность)</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6" data-aos="fade-up">
+                    <div class="flex items-center justify-between p-6 cursor-pointer">
+                        <h3 class="text-xl font-bold">Как организовано проживание?</h3>
+                        <i data-feather="chevron-down" class="text-primary"></i>
+                    </div>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Проживание организовано в 4* отеле в центре Куала-Лумпура. Дети размещаются по 2 человека в номере с разделением по полу и возрасту. В каждом номере есть все необходимые удобства.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-between p-6 cursor-pointer">
+                        <h3 class="text-xl font-bold">Какие меры безопасности предусмотрены?</h3>
+                        <i data-feather="chevron-down" class="text-primary"></i>
+                    </div>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Отель имеет круглосуточную охрану и видеонаблюдение. На 10 детей приходится 1 групп-лидер, который сопровождает их на всех мероприятиях. Школа находится в 5-7 минутах ходьбы от отеля по безопасному маршруту.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center justify-between p-6 cursor-pointer">
+                        <h3 class="text-xl font-bold">Как организовано питание?</h3>
+                        <i data-feather="chevron-down" class="text-primary"></i>
+                    </div>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Трехразовое питание включено в программу. Завтрак - шведский стол в отеле, обед - в школе или на экскурсиях, ужин - в отеле или на экскурсиях. Учитываются все диетические потребности.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center justify-between p-6 cursor-pointer">
+                        <h3 class="text-xl font-bold">Какие карманные деньги рекомендуются?</h3>
+                        <i data-feather="chevron-down" class="text-primary"></i>
+                    </div>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Рекомендуемая сумма карманных денег - 300-500 долларов на личные расходы (сувениры, дополнительные развлечения и т.д.).</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center justify-between p-6 cursor-pointer">
+                        <h3 class="text-xl font-bold">Как организованы экскурсии?</h3>
+                        <i data-feather="chevron-down" class="text-primary"></i>
+                    </div>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Все экскурсии проводятся на комфортабельном транспорте с профессиональными гидами. В программе более 9 экскурсий, включая поездку на остров.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dates -->
+    <section id="dates" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Даты (Интейки 2025)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4 text-center">2 недели</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="calendar" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">29 июня – 13 июля</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="calendar" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">3 августа – 17 августа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4 text-center">3 недели</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="calendar" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">29 июня – 20 июля</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white rounded-full p-2 mr-4">
+                                <i data-feather="calendar" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">3 августа – 24 августа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Camp -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold mb-16 text-center section-title" data-aos="fade">Профориентационный лагерь</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div data-aos="fade-right">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>50 часов английского</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Олимпиада</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Университетские визиты</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Семинары и лекции</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Экскурсии</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Сертификаты и подарки</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Поездка на остров</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-primary rounded-full p-1 mr-3 mt-1">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                                <span>Профориентационные тесты</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center" data-aos="fade-up">
+                    <button class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        Узнать стоимость
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-primary font-bold text-2xl">ONE ENGLISH</span>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="hover:text-primary transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="hover:text-primary transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="hover:text-primary transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-primary transition">
+                        <i data-feather="youtube"></i>
+                    </a>
+                </div>
+                <div class="text-sm text-gray-400 text-center md:text-right">
+                    <p>Все материалы и фото защищены авторским правом и не подлежат использованию без согласия автора</p>
+                    <p class="mt-2">© 2025 One English Camp. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('#faq .cursor-pointer').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                const icon = item.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.setAttribute('data-feather', 'chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.setAttribute('data-feather', 'chevron-down');
+                }
+                feather.replace();
+            });
+        });
+
+        feather.replace();
+    </script>
+</body>
+</html>
