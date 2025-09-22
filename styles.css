@@ -1,0 +1,210 @@
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+.teacher-card:hover {
+    transform: scale(1.03);
+}
+
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+
+.nav-link:hover {
+    color: #C8102E;
+}
+
+
+.active {
+    color: #C8102E;
+    font-weight: 600;
+}
+
+
+/* Instagram фирмалық градиент */
+.hover\:instagram-gradient:hover {
+    background: radial-gradient(circle at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%, 
+        #d6249f 60%, 
+        #285AEB 90%);
+}
+
+
+/* Пульсация анимациясы */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(200, 16, 46, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0);
+  }
+}
+
+#backToTop {
+  animation: pulse 2s infinite;
+}
+
+
+/* Малайзийский флаг */
+.malaysia-flag {
+  width: 80px;
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+        
+.malaysia-flag:hover {
+  transform: scale(1.05);
+}
+        
+.camp-link {
+  transition: all 0.3s ease;
+}
+
+
+/* Новая анимация для кнопки с самолетом */
+.camp-button {
+  display: inline-flex;
+  align-items: center;
+  background: #C8102E;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(200, 16, 46, 0.3);
+  position: relative;
+  overflow: visible;
+}
+        
+.camp-button:hover {
+  background: #a50d26;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(200, 16, 46, 0.4);
+}
+        
+.camp-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(200, 16, 46, 0.3);
+}
+        
+.icon-wrapper {
+  margin-right: 12px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+        
+.plane-icon {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+        
+/* Улучшенная анимация при наведении */
+.camp-button:hover .plane-icon {
+  animation: takeOff 1.2s ease-in-out;
+}
+        
+@keyframes takeOff {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateX(8px) translateY(-6px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(15px) translateY(-12px) rotate(0);
+  }
+  75% {
+    transform: translateX(22px) translateY(-6px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+
+/* Стили для чат-бота */
+#chatbot-window {
+  transition: all 0.3s ease;
+}
+
+.quick-btn {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 8px 12px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Анимация пульсации для кнопки чат-бота */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+#chatbot-toggle {
+  animation: pulse 2s infinite;
+}
+
+/* Стили для сообщений */
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.user-message div {
+  background-color: #002366;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+  padding: 10px 15px;
+  max-width: 70%;
+}
+
+.bot-message {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.bot-message div {
+  background-color: #f1f5f9;
+  color: #334155;
+  border-radius: 18px 18px 18px 4px;
+  padding: 10px 15px;
+  max-width: 70%;
+}
