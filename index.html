@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One English – Обучение английскому языку в Шымкенте</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="icon.jpg" alt="Logo" class="w-12 h-12 mr-2">
+                <span class="text-xl font-bold text-[#002366]">
+                    <span class="text-[#C8102E]">ONE</span>
+                    <span>ENGLISH</span>
+                </span>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#courses" class="nav-link">Курсы</a>
+                <a href="#teachers" class="nav-link">Преподаватели</a>
+                <a href="#branches" class="nav-link">Филиалы</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+                
+                <a href="#signup" class="bg-[#C8102E] text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                    Записаться
+                </a>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-[#C8102E]">Главная</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-[#C8102E]">О нас</a>
+            <a href="#courses" class="block py-2 text-gray-700 hover:text-[#C8102E]">Курсы</a>
+            <a href="#teachers" class="block py-2 text-gray-700 hover:text-[#C8102E]">Преподаватели</a>
+            <a href="#branches" class="block py-2 text-gray-700 hover:text-[#C8102E]">Филиалы</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-[#C8102E]">Контакты</a>
+            
+            <div class="flex items-center justify-between py-2">
+                <a href="#signup" class="bg-[#C8102E] text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-[#002366] to-[#C8102E] text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Изучай английский язык в One English – Шымкент</h1>
+                <p class="text-xl mb-8">Эффективные курсы английского языка для всех возрастов с профессиональными преподавателями</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#signup" class="bg-white text-[#C8102E] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 text-center">Записаться</a>
+                    <a href="#courses" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#C8102E] transition duration-300 text-center">Наши курсы</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-full max-w-md">
+                    <img src="home.jpg" alt="English Learning" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-[#002366]">О нас</h2>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-[#C8102E]">Наша миссия</h3>
+                    <p class="text-gray-700 mb-6">Мы стремимся сделать изучение английского языка доступным, интересным и эффективным для каждого студента, независимо от возраста и уровня подготовки.</p>
+                    <p class="text-gray-700">Наша школа сочетает современные методики преподавания с индивидуальным подходом к каждому ученику.</p>
+                    <!-- Ссылка на лагерь в Малайзии - обновленный стиль -->
+                    <div class="p-6 mt-8 rounded-xl border-2 border-[#C8102E] border-dashed bg-gradient-to-r from-white to-red-50 flex flex-col md:flex-row items-center justify-between">
+                        <div class="mb-4 md:mb-0 md:mr-6">
+                            <div class="flex items-center mb-2">
+                                <!-- JPG флаг Малайзии -->
+                                <img src="malaysia-flag.jpg" alt="Флаг Малайзии" class="malaysia-flag mr-3">
+                                <h4 class="font-bold text-[#C8102E] text-lg">Английский лагерь в Малайзии</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Уникальная возможность погрузиться в языковую среду с международными студентами</p>
+                        </div>
+                        <!-- Замените существующую кнопку на эту: -->
+                        <a href="Malaysia/malaysia.html" class="camp-button">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-plane plane-icon"></i>
+                            </div>
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="classroom.jpg" alt="Classroom" class="rounded-lg shadow-lg max-h-96">
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-[#C8102E] text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-[#002366]">80 минут</h4>
+                    <p class="text-gray-600">Продолжительность каждого занятия</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-[#C8102E] text-4xl mb-4">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-[#002366]">6+ лет</h4>
+                    <p class="text-gray-600">Обучение для детей и взрослых</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-[#C8102E] text-4xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-[#002366]">6 занятий</h4>
+                    <p class="text-gray-600">В неделю для интенсивного обучения</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-[#C8102E] text-4xl mb-4">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-[#002366]">English Club</h4>
+                    <p class="text-gray-600">Разговорная практика с носителями языка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-[#002366]">Наши курсы</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Лёгкий старт</h3>
+                        <p class="text-sm opacity-80">1 месяц обучения</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>12 занятий × 1ч 20мин</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Группа — 29 500 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Индивидуально — 55 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Дуэт — 45 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Трио — 45 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Книга — 4 000 ₸</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Записаться</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 2 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Базовый</h3>
+                        <p class="text-sm opacity-80">3 месяца обучения</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>12 занятий × 1ч 20мин</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>29 500 ₸/мес × 3 = 88 500 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Скидка 15% → 75 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Книга в подарок</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Записаться</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 3 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Рекомендуемый</h3>
+                        <p class="text-sm opacity-80">6 месяцев обучения</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>29 500 ₸/мес × 6 = 177 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Скидка 20% → 141 600 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Книга в подарок</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Бесплатный доступ к English Club</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Записаться</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 4 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">IELTS</h3>
+                        <p class="text-sm opacity-80">Подготовка к экзамену</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Группа 12 занятий × 1ч 20мин → 50 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Группа 12 занятий × 4 часа → 130 000 ₸</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Индивидуальные занятия</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Пробный тест перед экзаменом</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Записаться</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 5 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">СТАНДАРТ КУРС</h3>
+                        <p class="text-sm opacity-80">Регулярные занятия</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>3 раза в неделю по 80 мин</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>График: ПН–СР–ПТ или ВТ–ЧТ–СБ</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Бонус: English club</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>3 раза в неделю по 60 мин</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Разговорная практика с иностранным преподавателем</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Записаться</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 6 -->
+                <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-[#002366] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">English Club</h3>
+                        <p class="text-sm opacity-80">Разговорная практика</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Общение с носителями языка</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Тематические встречи</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Разбор реальных ситуаций</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Атмосфера живого общения</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#C8102E] mt-1 mr-2"></i>
+                                <span>Гибкий график посещений</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="block w-full bg-[#C8102E] text-white text-center py-3 rounded-lg hover:bg-red-700 transition duration-300">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-[#002366]">Наши преподаватели</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Teacher 1 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Алия Нургалиева" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Алия Нургалиева</h3>
+                        <p class="text-[#C8102E] mb-4">Старший преподаватель, IELTS тренер</p>
+                        <p class="text-gray-600">Опыт преподавания: 8 лет. Окончила КазУМОиМЯ им. Абылай хана. Сертифицированный IELTS тренер (Band 8.5). Специализируется на подготовке к международным экзаменам.</p>
+                    </div>
+                </div>
+                
+                <!-- Teacher 2 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="Teacher2.jpg" alt="Мисс Сальфираз" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Мисс Сальфираз</h3>
+                        <p class="text-[#C8102E] mb-4">Окончила южно-казахстанский университет имени М. Ауезова</p>
+                        <p class="text-gray-600">Стаж 5 лет.</p>
+                    </div>
+                </div>
+                
+                <!-- Teacher 3 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="Teacher3.jpg" alt="Мисс Гулмира" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Мисс Гулмира</h3>
+                        <p class="text-[#C8102E] mb-4">Окончила South Kazakhstan University (ЮКУ им. М.Ауезова)</p>
+                        <p class="text-gray-600">Есть сертификат TEFL 120 hours. Ielts 7.5</p>
+                    </div>
+                </div>
+                
+                <!-- Teacher 4 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="Teacher4.jpg" alt="Дана Сағынтаева" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Дана Сағынтаева</h3>
+                        <p class="text-[#C8102E] mb-4">Квалифицированный преподаватель</p>
+                        <p class="text-gray-600">С 10х летним опытом. TOEFL IBT. Стажировка - Париж, Баку.</p>
+                    </div>
+                </div>
+                
+                <!-- Teacher 5 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="Teacher5.jpg" alt="Сабрина Рустамова" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Сабрина Рустамова</h3>
+                        <p class="text-[#C8102E] mb-4">Квалифицированный преподаватель английского языка</p>
+                        <p class="text-gray-600">IELTS 7,5</p>
+                    </div>
+                </div>
+                
+                <!-- Teacher 6 -->
+                <div class="teacher-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+                    <img src="Teacher6.jpg" alt="Сарсенова Лаура" class="w-full h-64 object-cover object-center img-fluid">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#002366]">Сарсенова Лаура</h3>
+                        <p class="text-[#C8102E] mb-4">Бакалавр по специальности: Иностранная филология (английский и китайский язык ЮКГУ им. М Ауезова)</p>
+                        <p class="text-gray-600">Магистратура: “Turkiye Burslari” Marmara University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-[#002366]">Наши филиалы</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Branch 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-[#C8102E]">ЯНГИ ШАХАР</h3>
+                        <p class="text-gray-700 mb-4">Адрес: Янги-Шахар, Тамерлановское шоссе 3/4, 2 этаж</p>
+
+                        <a href="https://go.2gis.com/XWhMV" class="inline-block bg-[#002366] text-white px-4 py-2 rounded hover:bg-blue-900 transition duration-300 mb-6" target="_blank" rel="noopener">
+                            Перейти в 2GIS
+                        </a>
+
+                        <div class="map-container">
+                            <a href="https://go.2gis.com/XWhMV" target="_blank" rel="noopener">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.8176692066445!2d69.57748117526081!3d42.32508753731169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a91c05e146c493%3A0x3fd2795eda487849!2zNCwg0KLQtdC80LjRgNC70LDQvdC-0LLRgdC60L7QtSDRiC4gMywg0KjRi9C80LrQtdC90YI!5e0!3m2!1sru!2skz!4v1756191307033!5m2!1sru!2skz" 
+                                    width="100%" 
+                                    height="320" 
+                                    frameborder="0" 
+                                    style="border:0;" 
+                                    allowfullscreen 
+                                    loading="lazy" 
+                                    class="rounded-lg shadow">
+                                </iframe>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-[#C8102E]">СЕВЕР</h3>
+                        <p class="text-gray-700 mb-4">Адрес: ул. Рыскулова 72/8, 4 этаж</p>
+                        <a href="https://go.2gis.com/mhor1m" class="inline-block bg-[#002366] text-white px-4 py-2 rounded hover:bg-blue-900 transition duration-300 mb-6" target="_blank" rel="noopener">
+                            Перейти в 2GIS
+                        </a>
+                        
+                        <div class="map-container">
+                            <a href="https://go.2gis.com/mhor1m" target="_blank" rel="noopener">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.2288443134146!2d69.54501104907018!3d42.291099343806266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a9196b4b33c695%3A0xa08d00c7558bcfe8!2zOCwg0YPQu9C40YbQsCDQoNGL0YHQutGD0LvQvtCy0LAgNzIsINCo0YvQvNC60LXQvdGC!5e0!3m2!1sru!2skz!4v1756191495235!5m2!1sru!2skz" 
+                                    width="100%" 
+                                    height="320" 
+                                    frameborder="0" 
+                                    style="border:0;" 
+                                    allowfullscreen 
+                                    loading="lazy" 
+                                    class="rounded-lg shadow">
+                                </iframe>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-[#002366]">Контакты</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-[#C8102E]">Свяжитесь с нами</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold mb-4 text-[#002366]">Телефоны:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-[#C8102E] mr-3"></i>
+                                <a href="tel:+77473333536" class="hover:text-[#C8102E] transition duration-300">+7 747 333 35 36</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-[#C8102E] mr-3"></i>
+                                <a href="tel:+77763333536" class="hover:text-[#C8102E] transition duration-300">+7 776 333 35 36</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold mb-4 text-[#002366]">Социальные сети:</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://wa.me/77763333536" target="_blank" class="w-10 h-10 bg-[#002366] rounded-full flex items-center justify-center text-white hover:bg-[#25D366] transition duration-300">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                            </a>
+                            <a href="https://t.me/oneenglishBot" target="_blank" class="w-10 h-10 bg-[#002366] rounded-full flex items-center justify-center text-white hover:bg-[#0088cc] transition duration-300">
+                                <i class="fab fa-telegram-plane text-lg"></i>
+                            </a>
+                            <a href="https://instagram.com/1eng.kz/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center text-white transition duration-300 bg-[#002366] hover:instagram-gradient">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@One.english" target="_blank" class="w-10 h-10 bg-[#002366] rounded-full flex items-center justify-center text-white hover:bg-[#FF0000] transition duration-300">
+                                <i class="fab fa-youtube text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-4 text-[#002366]">График работы:</h4>
+                        <p class="flex items-center">
+                            <i class="fas fa-calendar-alt text-[#C8102E] mr-3"></i>
+                            <span>Понедельник - Суббота: 09:00 - 20:00</span>
+                        </p>
+                        <p class="flex items-center mt-2">
+                            <i class="fas fa-calendar-times text-[#C8102E] mr-3"></i>
+                            <span>Воскресенье: выходной</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold text-center text-[#C8102E] mb-8">Форма обратной связи</h3>
+                    <form id="contact-form" class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Ваше имя</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#C8102E]" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#C8102E]" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#C8102E]" required>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#C8102E]"></textarea>
+                        </div>
+                        
+                        <button type="button" onclick="sendContact();" class="w-full bg-[#C8102E] text-white py-3 rounded-lg hover:bg-red-700 transition duration-300 font-bold">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="py-20 bg-gradient-to-r from-[#002366] to-[#C8102E] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Записаться на курсы</h2>
+                <p class="text-xl mb-10">Оставьте заявку и мы свяжемся с вами для уточнения деталей</p>
+                
+                <form class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <input type="text" id="signup-name" placeholder="Ваше имя" class="w-full px-6 py-3 rounded-full bg-white bg-opacity-20 border border-white border-opacity-50 focus:outline-none focus:bg-opacity-30 placeholder-white" required>
+                    </div>
+                    <div>
+                        <input type="tel" id="signup-phone" placeholder="Телефон" class="w-full px-6 py-3 rounded-full bg-white bg-opacity-20 border border-white border-opacity-50 focus:outline-none focus:bg-opacity-30 placeholder-white" required>
+                    </div>
+                    <div>
+                        <select id="signup-course" class="w-full px-6 py-3 rounded-full bg-white bg-opacity-20 border border-white border-opacity-50 focus:outline-none focus:bg-opacity-30 appearance-none">
+                            <option value="" disabled selected>Выберите курс</option>
+                            <option value="Лёгкий старт">Лёгкий старт</option>
+                            <option value="Базовый">Базовый</option>
+                            <option value="Рекомендуемый">Рекомендуемый</option>
+                            <option value="IELTS">IELTS</option>
+                            <option value="Стандарт курс">Стандарт курс</option>
+                            <option value="English Club">English Club</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="signup-branch" class="w-full px-6 py-3 rounded-full bg-white bg-opacity-20 border border-white border-opacity-50 focus:outline-none focus:bg-opacity-30 appearance-none">
+                            <option value="" disabled selected>Выберите филиал</option>
+                            <option value="Янги Шахар">Янги Шахар</option>
+                            <option value="Север">Север</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="button" onclick="sendSignup();" class="w-full bg-white text-[#C8102E] py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#002366] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="icon.jpg" alt="Logo" class="w-10 h-10 mr-2 rounded-full object-cover">
+                        <span class="text-xl font-bold">
+                            <span class="text-[#C8102E]">ONE</span>
+                            <span class="bg-white text-[#002366] px-2 py-0.5 rounded">ENGLISH</span>
+                        </span>
+                    </div>
+                    <p class="mb-4">Английский язык для всех возрастов в Шымкенте</p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/77763333536" target="_blank" class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-[#25D366] transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/oneenglishBot" target="_blank" class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-[#0088cc] transition duration-300">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://instagram.com/1eng.kz/" target="_blank" class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center transition duration-300 hover:instagram-gradient">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@One.english" target="_blank" class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-[#FF0000] transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-gray-300 transition duration-300">Главная</a></li>
+                        <li><a href="#about" class="hover:text-gray-300 transition duration-300">О нас</a></li>
+                        <li><a href="#courses" class="hover:text-gray-300 transition duration-300">Курсы</a></li>
+                        <li><a href="#teachers" class="hover:text-gray-300 transition duration-300">Преподаватели</a></li>
+                        <li><a href="#branches" class="hover:text-gray-300 transition duration-300">Филиалы</a></li>
+                        <li><a href="#contact" class="hover:text-gray-300 transition duration-300">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Курсы</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">Лёгкий старт</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">Базовый</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">Рекомендуемый</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">IELTS</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">Стандарт курс</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition duration-300">English Club</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#C8102E] mt-1 mr-2"></i>
+                            <span>Янги-Шахар, Тамерлановское шоссе 3/4, 2 этаж</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#C8102E] mt-1 mr-2"></i>
+                            <span>ул. Рыскулова 72/8, 4 этаж</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-[#C8102E] mt-1 mr-2"></i>
+                            <span>+7 776 333 35 36</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-[#C8102E] mt-1 mr-2"></i>
+                            <span>study.200120@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 mt-12 pt-6 text-center text-sm text-white text-opacity-70">
+                <p>© 2025 One English – Обучение английскому языку в Шымкенте. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="hidden fixed bottom-6 left-6 w-12 h-12 bg-[#C8102E] text-white rounded-full shadow-lg flex items-center justify-center transition duration-300 hover:bg-[#a00]">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Social Networks Button -->
+    <div id="social-container" class="fixed bottom-6 right-6 z-50">
+        <!-- Кнопка социальных сетей/закрытия -->
+        <button id="social-toggle" class="w-14 h-14 bg-[#C8102E] text-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:bg-red-700 hover:scale-110 hover:shadow-2xl border-2 border-white">
+            <i class="fas fa-share-alt text-xl" id="social-icon"></i>
+        </button>
+
+        <!-- Окно социальных сетей (изначально скрыто) -->
+        <div id="social-window" class="hidden absolute bottom-16 right-0 bg-white rounded-xl shadow-2xl p-3 w-56 border border-gray-100">
+            <!-- Социальные сети -->
+            <div class="space-y-2">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/77763333536?text=🎓%20Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20курсах%20английского%20в%20One%20English%20🌐%20https://one-english.kz" target="_blank" class="social-item flex items-center space-x-3 text-gray-800 hover:bg-green-50 transition-all duration-200 group p-3 rounded-lg">
+                    <div class="social-icon bg-[#25D366] text-white group-hover:scale-105 transition-transform duration-200 shadow-md">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                    </div>
+                    <span class="text-sm font-semibold">WhatsApp</span>
+                </a>
+
+                <!-- Телефон -->
+                <a href="tel:+77763333536" class="social-item flex items-center space-x-3 text-gray-800 hover:bg-red-50 transition-all duration-200 group p-3 rounded-lg">
+                    <div class="social-icon bg-[#C8102E] text-white group-hover:scale-105 transition-transform duration-200 shadow-md">
+                        <i class="fas fa-phone-alt text-lg"></i>
+                    </div>
+                    <span class="text-sm font-semibold">Телефон</span>
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/oneenglishBot" target="_blank" class="social-item flex items-center space-x-3 text-gray-800 hover:bg-blue-50 transition-all duration-200 group p-3 rounded-lg">
+                    <div class="social-icon bg-[#0088cc] text-white group-hover:scale-105 transition-transform duration-200 shadow-md">
+                        <i class="fab fa-telegram-plane text-lg"></i>
+                    </div>
+                    <span class="text-sm font-semibold">Telegram</span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/1eng.kz/" target="_blank" class="social-item flex items-center space-x-3 text-gray-800 hover:bg-pink-50 transition-all duration-200 group p-3 rounded-lg">
+                    <div class="social-icon instagram-gradient text-white group-hover:scale-105 transition-transform duration-200 shadow-md">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </div>
+                <span class="text-sm font-semibold">Instagram</span>
+            </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@One.english" target="_blank" class="social-item flex items-center space-x-3 text-gray-800 hover:bg-red-50 transition-all duration-200 group p-3 rounded-lg">
+                    <div class="social-icon bg-[#FF0000] text-white group-hover:scale-105 transition-transform duration-200 shadow-md">
+                        <i class="fab fa-youtube text-lg"></i>
+                    </div>
+                    <span class="text-sm font-semibold">YouTube</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+.teacher-card:hover {
+  transform: scale(1.03);
+}
+
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+
+.nav-link:hover {
+  color: #C8102E;
+}
+
+
+.active {
+  color: #C8102E;
+  font-weight: 600;
+}
+
+
+/* Instagram фирмалық градиент */
+.hover\:instagram-gradient:hover {
+    background: radial-gradient(circle at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%, 
+        #d6249f 60%, 
+        #285AEB 90%);
+}
+
+
+/* Пульсация анимациясы */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(200, 16, 46, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0);
+  }
+}
+
+#backToTop {
+  animation: pulse 2s infinite;
+}
+
+
+/* Малайзийский флаг */
+.malaysia-flag {
+  width: 80px;
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+        
+.malaysia-flag:hover {
+  transform: scale(1.05);
+}
+        
+.camp-link {
+  transition: all 0.3s ease;
+}
+
+
+/* Новая анимация для кнопки с самолетом */
+.camp-button {
+  display: inline-flex;
+  align-items: center;
+  background: #C8102E;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(200, 16, 46, 0.3);
+  position: relative;
+  overflow: visible;
+}
+        
+.camp-button:hover {
+  background: #a50d26;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(200, 16, 46, 0.4);
+}
+        
+.camp-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(200, 16, 46, 0.3);
+}
+        
+.icon-wrapper {
+  margin-right: 12px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+        
+.plane-icon {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+        
+/* Улучшенная анимация при наведении */
+.camp-button:hover .plane-icon {
+  animation: takeOff 1.2s ease-in-out;
+}
+        
+@keyframes takeOff {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateX(8px) translateY(-6px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(15px) translateY(-12px) rotate(0);
+  }
+  75% {
+    transform: translateX(22px) translateY(-6px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+
+/* Стили для компактных социальных сетей */
+#social-window {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0;
+  transform: translateY(15px) scale(0.95);
+}
+
+#social-window:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.social-item {
+  transition: all 0.2s ease;
+  border: 1px solid #f3f4f6;
+}
+
+.social-item:hover {
+  transform: translateX(4px);
+  border-color: #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Instagram градиент */
+.instagram-gradient {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+}
+
+/* Анимация пульсации для кнопки */
+@keyframes gentle-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.4);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(200, 16, 46, 0);
+  }
+}
+
+#social-toggle {
+  animation: gentle-pulse 3s infinite;
+}
+
+/* Анимация появления элементов */
+.social-item {
+  animation: slideInLeft 0.3s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-15px);
+}
+
+.social-item:nth-child(1) { animation-delay: 0.05s; }
+.social-item:nth-child(2) { animation-delay: 0.1s; }
+.social-item:nth-child(3) { animation-delay: 0.15s; }
+.social-item:nth-child(4) { animation-delay: 0.2s; }
+.social-item:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Адаптивность для всех устройств */
+@media (max-width: 768px) {
+  #social-container {
+    bottom: 4;
+    right: 4;
+  }
+    
+  #social-toggle {
+    width: 12;
+    height: 12;
+  }
+    
+  #social-window {
+    width: 52;
+    right: -8px;
+    bottom: 14;
+  }
+    
+  .social-item {
+    padding: 10px 8px;
+  }
+    
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+    
+  .social-icon i {
+    font-size: 16px;
+  }
+    
+  .social-item span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  #social-window {
+    width: 48;
+  }
+    
+  .social-item {
+    padding: 8px 6px;
+  }
+    
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+    
+  .social-icon i {
+    font-size: 14px;
+  }
+    
+  .social-item span {
+    font-size: 12px;
+  }
+}
